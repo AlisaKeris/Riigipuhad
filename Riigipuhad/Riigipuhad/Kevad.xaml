@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Riigipuhad;assembly=Riigipuhad"
+             x:Class="Riigipuhad.Kevad" Title="Kevad">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <local:Mai></local:Mai>
+        <local:Marts></local:Marts>
+        <local:April></local:April>
+    </TabbedPage.Children>
+</TabbedPage>

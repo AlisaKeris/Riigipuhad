@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Riigipuhad;assembly=Riigipuhad"
+             x:Class="Riigipuhad.Sügis" Title="Sügis">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <local:Oktober></local:Oktober>
+        <local:September></local:September>
+        <local:November></local:November>
+    </TabbedPage.Children>
+</TabbedPage>
