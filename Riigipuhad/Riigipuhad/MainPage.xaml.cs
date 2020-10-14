@@ -16,11 +16,26 @@ namespace Riigipuhad
             InitializeComponent();
             btn = new Button();
             btn.Clicked += Btn_Clicked1;
+            StackLayout stackLayout = new StackLayout()
+            {
+                Children = {btn }
+            }; stackLayout.Orientation = StackOrientation.Vertical;
         }
 
-        private void Btn_Clicked1(object sender, EventArgs e)
+        private async void Btn_Clicked1(object sender, EventArgs e)
         {
-           var answer = DisplayActionSheet("Vali kuu", "Cancel", null, "Kevad", "Suvi", "Talv", "Sügis");
+           string answer = await DisplayActionSheet("Vali kuu", "Cancel", null, "Kevad", "Suvi", "Talv", "Sügis");
+            if (answer == "Kevad")
+            {
+                
+            } else if (answer == "Suvi"){
+
+            } else if (answer == "Sügis"){
+
+            } else if (answer == "Talv")
+            {
+
+            }
         }
     }
 }
