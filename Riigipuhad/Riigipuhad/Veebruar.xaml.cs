@@ -12,9 +12,21 @@ namespace Riigipuhad
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Veebruar : ContentPage
     {
+        Label lbl0, lbl1;
         public Veebruar()
         {
             InitializeComponent();
+            lbl0 = new Label()
+            {
+                Text = "24. veebruar – Eesti iseseisvuspäev",
+            }; lbl1 = new Label()
+            {
+                Text = "2. veebruar – Tartu rahulepingu aastapäev",
+            }; 
+            StackLayout stackLayout = new StackLayout()
+            {
+                Children = { lbl0, lbl1}
+            }; stackLayout.Orientation = StackOrientation.Vertical;
         }
     }
 }

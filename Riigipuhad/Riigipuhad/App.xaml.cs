@@ -9,7 +9,6 @@ namespace Riigipuhad
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 

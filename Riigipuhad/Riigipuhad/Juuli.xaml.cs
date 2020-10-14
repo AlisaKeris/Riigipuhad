@@ -12,9 +12,18 @@ namespace Riigipuhad
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Juuli : ContentPage
     {
+        Label lbl1;
         public Juuli()
         {
             InitializeComponent();
+            lbl1 = new Label()
+            {
+                Text = "Juulis pole pühi!",
+            }; 
+            StackLayout stackLayout = new StackLayout()
+            {
+                Children = { lbl1}
+            }; stackLayout.Orientation = StackOrientation.Vertical;
         }
     }
 }

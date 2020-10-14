@@ -18,9 +18,9 @@ namespace Riigipuhad
             btn.Clicked += Btn_Clicked1;
         }
 
-        async void Btn_Clicked1(object sender, EventArgs e)
+        private void Btn_Clicked1(object sender, EventArgs e)
         {
-            string answer = await DisplayActionSheet("Vali kuu", "Cancel", null, "Jaanuar", "Veebruar", "Marts", "April", "Mai", "Juuni", "Juuli", "August", "September", "Oktober", "November", "December");
+           var answer = DisplayActionSheet("Vali kuu", "Cancel", null, "Kevad", "Suvi", "Talv", "Sügis");
         }
     }
 }

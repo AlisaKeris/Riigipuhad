@@ -12,9 +12,18 @@ namespace Riigipuhad
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class August : ContentPage
     {
+        Label lbl1;
         public August()
         {
             InitializeComponent();
+            lbl1 = new Label()
+            {
+                Text = "20. august – taasiseseisvumispäev (neljapäev)",
+            };
+            StackLayout stackLayout = new StackLayout()
+            {
+                Children = { lbl1 }
+            }; stackLayout.Orientation = StackOrientation.Vertical;
         }
     }
 }
