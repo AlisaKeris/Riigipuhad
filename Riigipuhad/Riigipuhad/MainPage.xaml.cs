@@ -26,7 +26,7 @@ namespace Riigipuhad
            string answer = await DisplayActionSheet("Vali kuu", "Cancel", null, "Kevad", "Suvi", "Talv", "Sügis");
             if (answer == "Kevad")
             {
-                
+               
                    
             } else if (answer == "Suvi"){
 

@@ -39,6 +39,7 @@ namespace Riigipuhad
                 BackgroundColor = Color.FromHex("#ebcc03"),
                 Children = { lbl0,lbl1,lbl2,lbl3 }
             }; stackLayout.Orientation = StackOrientation.Vertical;
+            Content = stackLayout;
         }
     }
 }
