@@ -15,13 +15,14 @@ namespace Riigipuhad
         Label lbl1;
         public August()
         {
-            InitializeComponent();
             lbl1 = new Label()
             {
                 Text = "20. august – taasiseseisvumispäev (neljapäev)",
+                TextColor = Color.FromHex("#897d03")
             };
             StackLayout stackLayout = new StackLayout()
             {
+                BackgroundColor = Color.FromHex("#ebcc03"),
                 Children = { lbl1 }
             }; stackLayout.Orientation = StackOrientation.Vertical;
         }

@@ -15,13 +15,14 @@ namespace Riigipuhad
         Label lbl0;
         public Marts()
         {
-            InitializeComponent();
             lbl0 = new Label()
             {
                 Text = "14. märts – emakeelepäev",
+                TextColor = Color.FromHex("#256028")
             };
             StackLayout stackLayout = new StackLayout()
             {
+                BackgroundColor = Color.FromHex("#25a028"),
                 Children = { lbl0 }
             }; stackLayout.Orientation = StackOrientation.Vertical;
         }

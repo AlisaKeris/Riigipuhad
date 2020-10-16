@@ -15,13 +15,14 @@ namespace Riigipuhad
         Label lbl0;
         public Oktober()
         {
-            InitializeComponent();
             lbl0 = new Label()
             {
                 Text = "17. oktoober – hõimupäev",
+                TextColor = Color.FromHex("#612e01")
             }; 
             StackLayout stackLayout = new StackLayout()
             {
+                BackgroundColor = Color.FromHex("#fea201"),
                 Children = { lbl0}
             }; stackLayout.Orientation = StackOrientation.Vertical;
         }

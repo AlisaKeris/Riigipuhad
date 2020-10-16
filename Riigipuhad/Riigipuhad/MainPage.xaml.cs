@@ -13,7 +13,6 @@ namespace Riigipuhad
         Button btn;
         public MainPage()
         {
-            InitializeComponent();
             btn = new Button();
             btn.Clicked += Btn_Clicked1;
             StackLayout stackLayout = new StackLayout()
@@ -28,6 +27,7 @@ namespace Riigipuhad
             if (answer == "Kevad")
             {
                 
+                   
             } else if (answer == "Suvi"){
 
             } else if (answer == "Sügis"){
